@@ -1,6 +1,6 @@
 # 🧠 TensorFlow Hands-On Projects
 
-A hands-on repository showcasing real-world deep learning implementations using **TensorFlow** and **Keras** — from image classification to visualizing convolutional layers. This project demonstrates my practical understanding of CNNs, callbacks, visualization techniques, and dataset handling.
+A hands-on repository showcasing real-world deep learning implementations using **TensorFlow** and **Keras**.
 
 ---
 
