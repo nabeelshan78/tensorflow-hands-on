@@ -72,7 +72,7 @@ This Jupyter Notebook demonstrates how to enhance the performance of neural netw
 
 ---
 
-## Improve MNIST with Convolutions  
+## Improve MNIST with CNN  
 > [`Improve MNIST with Convolutions.ipynb`](./Improve%20MNIST%20with%20Convolutions.ipynb)
 
 A compact walkthrough of enhancing MNIST digit classification using convolutional layers and early stopping.  
