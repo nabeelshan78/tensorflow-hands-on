@@ -144,7 +144,7 @@ This notebook walks through image classification (Horse vs. Human) using a custo
 - Built a model to extract activations from each conv/pool layer
 - Feature maps show how the model detects patterns at each depth
 
-| Visualized Activations |
+| Visualized Layers |
 |------------------------|
 | ![](./Visualizing%20Conv%20Layers/visual_1.png) |
 | ![](./Visualizing%20Conv%20Layers/visual_2.png) |
@@ -156,4 +156,8 @@ Upload a custom image → Model returns prediction: **Horse** or **Human**
 ### Highlights
 - Clean pipeline from data to training to prediction
 - Useful feature map visualizations for model explainability
+
+dataset --> https://huggingface.co/datasets/nabeelshan/tf_hands_on/tree/main/Visualizing%20Conv%20Layers
+
+---
 
