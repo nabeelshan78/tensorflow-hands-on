@@ -95,14 +95,14 @@ Understand and implement:
 
 ---
 
-## 📊 Visualizing Conv Layers
+## Visualizing Conv Layers
 
-> 📁 [`Visualizing Conv Layers`](./Visualizing%20Conv%20Layers/)
+> [`Visualizing Conv Layers`](./Visualizing%20Conv%20Layers/)
 
 - Visualizes learned filters
 - Helps debug training by seeing how CNNs perceive data
 
-📈 Results Chart:
+Results Chart:
 
 ![Chart](./Visualizing%20Conv%20Layers/results%20chart.png)
 
@@ -113,7 +113,7 @@ Understand and implement:
 
 ---
 
-## 📁 Dataset Structure
+## Dataset Structure
 
 ```bash
 tensorflow-hands-on/
