@@ -12,7 +12,7 @@ A hands-on repository showcasing real-world deep learning implementations using 
 - [Improve MNIST with CNN](#improve-mnist-with-cnn)
 - [Early Stopping & Callbacks](#early-stopping-and-callbacks)
 - [Handling Complex Images](#handling-complex-images)
-- [Visualizing Conv Layers](#image-preprocessing-&-layer-visualization)
+- [Visualizing Conv Layers](#image-preprocessing-and-layer-visualization)
 
 ---
 
@@ -81,7 +81,7 @@ Efficiently demonstrates the impact of CNNs over dense networks for image-based 
 
 ---
 
-## Callbacks and Early Stopping
+## Early Stopping and Callbacks
 > [`callbacks.ipynb`](./callbacks.ipynb)  
 > [`early_stop_callbacks.ipynb`](./early_stop_callbacks.ipynb)
 
@@ -120,7 +120,7 @@ A practical introduction to real-world emotion detection using TensorFlow CNNs.
 ---
 
 
-## Image Preprocessing & Layer Visualization
+## Image Preprocessing and Layer Visualization
 
 > [`Visualizing Convolutional Layers.ipynb`](./Visualizing%20Convolutional%20Layers.ipynb)
 
