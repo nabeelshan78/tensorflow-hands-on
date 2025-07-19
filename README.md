@@ -6,7 +6,7 @@ A hands-on repository showcasing real-world deep learning implementations using 
 
 ## 🔗 Table of Contents
 
-- [Computer Vision Examples](#computer-vision-examples)
+- [Computer Vision Example: Fashion MNIST Classification](#computer-vision-example-fashion-mnist-classification)
 - [Exploring Convolutions](#exploring-convolutions)
 - [Improving Accuracy Using Convolutions](#improving-accuracy-using-convolutions)
 - [Improve MNIST with CNN](#improve-mnist-with-cnn)
@@ -22,118 +22,144 @@ A hands-on repository showcasing real-world deep learning implementations using 
 
 ---
 
-## Computer Vision Examples
+## Computer Vision Example: Fashion MNIST Classification
 
 > [`computer_vision_ex.ipynb`](./computer_vision_ex.ipynb)
 
-A foundational notebook where we:
-- Load image datasets
-- Preprocess and reshape tensors
-- Use simple CNN architectures
-- Apply training/validation testing
+This notebook demonstrates a step-by-step approach to building and training a neural network for image classification
+### Key Features
 
-![Example Image](./images/horse.webp)
-
+- Loads and visualizes Fashion MNIST data  
+- Preprocesses (normalizes) images  
+- Builds a neural network using Keras Sequential API  
+- Explains activation functions: ReLU and Softmax  
+- Trains and evaluates the model’s accuracy  
+- Experiments with different layer sizes for accuracy  
+- Implements early stopping with custom callbacks  
 ---
 
 ## Exploring Convolutions
 
 > [`exploring_convolutions.ipynb`](./exploring_convolutions.ipynb)
 
-Explore how convolutional filters behave with different kernel sizes and strides. This section visually demonstrates how features are extracted.
+This notebook demonstrates the fundamentals of convolutions on 2D grayscale images using NumPy, Matplotlib, and SciPy. It uses the built-in "ascent" image from SciPy as an example and guides you through applying various convolution filters and max pooling.
 
-| Feature Map Visuals |
-|---------------------|
-| ![](./images/exploring_convolutions_01.png) |
-| ![](./images/exploring_convolutions_03.png) |
+
+**Visuals**
+<p align="center">
+  <img src="images/exploring_convolutions_01.png" width="300"/>
+  <img src="images/exploring_convolutions_02.png" width="300"/>
+  <img src="images/exploring_convolutions_03.png" width="300"/>
+</p>
+
+<p align="center">
+  <img src="images/exploring_convolutions_04.png" width="300"/>
+  <img src="images/exploring_convolutions_05.png" width="300"/>
+</p>
 
 ---
 
 ## Improving Accuracy Using Convolutions
 
 > [`improving_accuracy_using_convolutions.ipynb`](./improving_accuracy_using_convolutions.ipynb)
+> 
+This Jupyter Notebook demonstrates how to enhance the performance of neural networks by applying convolutional layers. The project explores building and training convolutional neural networks (CNNs) using TensorFlow, focusing on improving accuracy compared to basic dense-layered models. Key steps include data preparation, model construction, training, evaluation, and comparison of results to highlight the benefits of convolutional architectures for image classification tasks.
 
-Train a CNN and compare its performance with traditional dense layers. Visualize convolutional filters and their effects on training.
-
-![Conv Filter Visual](./images/improving_accuracy_using_convolutions_01_conv_visual.png)
+<p align="center">
+  <img src="images/improving_accuracy_using_convolutions_01_conv_visual.png" width="700"/>
+</p>
+<p align="center"><b>Conv Filter Visual</b></p>
 
 ---
 
-## Improve MNIST with Convolutions
-
+## Improve MNIST with Convolutions  
 > [`Improve MNIST with Convolutions.ipynb`](./Improve%20MNIST%20with%20Convolutions.ipynb)
 
-A deep dive into improving the performance of MNIST classification using convolutional layers. Step-by-step comparison with dense architectures.
+A compact walkthrough of enhancing MNIST digit classification using convolutional layers and early stopping.  
+Key steps include:
+
+- Load & preprocess the MNIST dataset  
+- Build a CNN with Conv2D, MaxPooling, Flatten & Dense layers  
+- Implement early stopping for >99.5% accuracy  
+- Visualize training loss & accuracy across epochs  
+
+Efficiently demonstrates the impact of CNNs over dense networks for image-based tasks.
 
 ---
 
-## Callbacks & Early Stopping
-
+## Callbacks & Early Stopping  
 > [`callbacks.ipynb`](./callbacks.ipynb)  
 > [`early_stop_callbacks.ipynb`](./early_stop_callbacks.ipynb)
 
-Understand and implement:
-- Custom Callbacks
-- Early stopping based on validation loss
-- Learning rate schedules
+Explore how to control training flow using TensorFlow Callbacks.
+
+Key concepts covered:
+- Custom callbacks to halt training based on loss/accuracy thresholds  
+- Early stopping for efficient training (e.g., stop when accuracy > 98%)  
+- Simple neural nets with Fashion MNIST & MNIST datasets  
+- Saves time by avoiding overfitting and unnecessary epochs  
+
+Hands-on demos to build smarter training pipelines.
 
 ---
 
-## Handling Complex Images
+## Handling Complex Images (Happy vs Sad Classifier)
 
 > [`Handling Complex Images`](./Handling%20Complex%20Images/)
 
-- Custom dataset with `happy 😃` and `sad 😢` faces
-- Demonstrates binary classification using CNNs
-- Real-world simulation of emotion detection
+Build a binary image classifier using CNNs to detect emotions from emoji-like face images.
 
+Key highlights:
+- Custom dataset with 80 labeled images (40 happy 😃, 40 sad 😢)
+- Convolutional Neural Network (CNN) for binary classification
+- Early stopping callback when accuracy reaches 99.9%
+- Data preprocessing, normalization, and real-time batch loading
+- Model architecture: Conv2D ➝ MaxPool ➝ Flatten ➝ Dense ➝ Sigmoid
 
-📷 Sample Images:
-| Happy | Sad |
-|-------|-----|
+📷 **Sample Images:**
+| Happy 😃 | Sad 😢 |
+|----------|--------|
 | ![](./Handling%20Complex%20Images/data/happy/happy1-00.png) | ![](./Handling%20Complex%20Images/data/sad/sad1-00.png) |
+
+A practical introduction to real-world emotion detection using TensorFlow CNNs.
 
 ---
 
-## Visualizing Conv Layers
 
-> [`Visualizing Conv Layers`](./Visualizing%20Conv%20Layers/)
+## Image Preprocessing & Layer Visualization
 
-- Visualizes learned filters
-- Helps debug training by seeing how CNNs perceive data
+> [`Visualizing Convolutional Layers.ipynb`](./Visualizing%20Convolutional%20Layers.ipynb)
 
-Results Chart:
+This notebook walks through image classification (Horse vs. Human) using a custom CNN in TensorFlow, and visualizes what each convolutional layer learns.
+
+- Images organized into `train/` and `val/` folders
+- ~500+ samples per class
+- Visual preview of sample images
+
+---
+
+### Model & Training
+- 5 * Conv2D → MaxPool layers + Dense layers  
+- Input: `300x300x3`, Output: binary prediction  
+- Trained for 15 epochs  
+- Metrics: Accuracy & Loss plotted over time
 
 ![Chart](./Visualizing%20Conv%20Layers/results%20chart.png)
+
+### Layer Visualization
+- Built a model to extract activations from each conv/pool layer
+- Feature maps show how the model detects patterns at each depth
 
 | Visualized Activations |
 |------------------------|
 | ![](./Visualizing%20Conv%20Layers/visual_1.png) |
 | ![](./Visualizing%20Conv%20Layers/visual_2.png) |
+| ![](./Visualizing%20Conv%20Layers/visual_3.png) |
+| ![](./Visualizing%20Conv%20Layers/visual_4.png) |
+### Interactive Prediction
+Upload a custom image → Model returns prediction: **Horse** or **Human**
 
----
-
-## Dataset Structure
-
-```bash
-tensorflow-hands-on/
-├── callbacks.ipynb
-├── computer_vision_ex.ipynb
-├── data/
-│   └── mnist.npz
-├── early_stop_callbacks.ipynb
-├── exploring_convolutions.ipynb
-├── Improve MNIST with Convolutions.ipynb
-├── improving_accuracy_using_convolutions.ipynb
-├── images/
-│   └── *.png, *.webp
-├── Handling Complex Images/
-│   ├── notebook.ipynb
-│   └── data/
-│       ├── happy/
-│       └── sad/
-└── Visualizing Conv Layers/
-    ├── notebook.ipynb
-    └── visual_x.png
-```
+### Highlights
+- Clean pipeline from data to training to prediction
+- Useful feature map visualizations for model explainability
 
