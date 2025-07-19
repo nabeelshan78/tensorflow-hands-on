@@ -10,15 +10,9 @@ A hands-on repository showcasing real-world deep learning implementations using 
 - [Exploring Convolutions](#exploring-convolutions)
 - [Improving Accuracy Using Convolutions](#improving-accuracy-using-convolutions)
 - [Improve MNIST with CNN](#improve-mnist-with-cnn)
-- [Early Stopping & Callbacks](#early-stopping--callbacks)
+- [Early Stopping & Callbacks](#early-stopping-and-callbacks)
 - [Handling Complex Images](#handling-complex-images)
-- [Visualizing Conv Layers](#visualizing-conv-layers)
-- [Dataset Structure](#dataset-structure)
-- [Image Assets](#image-assets)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Setup & Installation](#setup--installation)
-- [Future Work](#future-work)
-
+- [Visualizing Conv Layers](#image-preprocessing-&-layer-visualization)
 
 ---
 
@@ -87,7 +81,7 @@ Efficiently demonstrates the impact of CNNs over dense networks for image-based 
 
 ---
 
-## Callbacks & Early Stopping  
+## Callbacks and Early Stopping
 > [`callbacks.ipynb`](./callbacks.ipynb)  
 > [`early_stop_callbacks.ipynb`](./early_stop_callbacks.ipynb)
 
@@ -103,7 +97,7 @@ Hands-on demos to build smarter training pipelines.
 
 ---
 
-## Handling Complex Images (Happy vs Sad Classifier)
+## Handling Complex Images
 
 > [`Handling Complex Images`](./Handling%20Complex%20Images/)
 
