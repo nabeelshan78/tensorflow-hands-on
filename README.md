@@ -22,7 +22,7 @@ A hands-on repository showcasing real-world deep learning implementations using 
 
 ---
 
-# Computer Vision Examples
+## Computer Vision Examples
 
 > 📓 [`computer_vision_ex.ipynb`](./computer_vision_ex.ipynb)
 
